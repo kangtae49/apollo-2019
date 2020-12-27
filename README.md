@@ -21,11 +21,13 @@ git push origin master
 git push -u origin master
 ```
 ```
-yarn add styled-components react-router-dom apollo-boost@apollo/react-hooks graphql
-
+yarn add styled-components react-router-dom apollo-boost @apollo/react-hooks graphql optimism ts-invariant
 ```
 
 ```
 google search "reset css"
 https://meyerweb.com/eric/tools/css/reset/
 ```
+
+https://yts.mx/api/v2/list_movies.json
+

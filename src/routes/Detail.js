@@ -1,3 +1,5 @@
 import React from "react";
 
-export default () => <h1>Detail</h1>;
+const Detail = () => <h1>Detail</h1>;
+
+export default Detail;
