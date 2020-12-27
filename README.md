@@ -16,7 +16,16 @@ code .
 ```
 ```
 git remote add origin https://github.com/kangtae49/apollo-2019.git
+
+git push origin master
+git push -u origin master
 ```
 ```
-yarn add styled-components react-router-dom
+yarn add styled-components react-router-dom apollo-boost@apollo/react-hooks graphql
+
+```
+
+```
+google search "reset css"
+https://meyerweb.com/eric/tools/css/reset/
 ```
