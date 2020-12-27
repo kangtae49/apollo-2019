@@ -14,3 +14,9 @@ https://github.com/kangtae49/apollo-2019.git
 cd apollo-2019
 code .
 ```
+```
+git remote add origin https://github.com/kangtae49/apollo-2019.git
+```
+```
+yarn add styled-components react-router-dom
+```
