@@ -4,14 +4,6 @@ import {gql} from "apollo-boost";
 import {useQuery} from "@apollo/react-hooks";
 import Movie from "../components/Movie";
 
-const GET_MOVIES = gql`
-  {
-    movies {
-      id
-      medium_cover_image
-    }
-  }
-`;
 
 const Container = styled.div`
   display: flex;
@@ -48,6 +40,15 @@ const Loading = styled.div`
   margin-top: 10px;
 `;
 
+const GET_MOVIES = gql`
+  {
+    movies {
+      id
+      medium_cover_image
+    }
+  }
+`;
+
 
 const Home = () => {
     const {loading, error, data} = useQuery(GET_MOVIES);
@@ -58,6 +59,7 @@ const Home = () => {
     // if(data && data.movies){
     //     return data.movies.map((m, index)=><h1 key={index}>{m.id}</h1>);
     // }
+    
     return (
       <Container>
         <Header>
@@ -65,7 +67,7 @@ const Home = () => {
           <Subtitle>I love GraphQL</Subtitle>
         </Header>
         {loading && <Loading>Loading...</Loading>}
-        {!loading && data.movies && data.movies.map(m => <Movie key={m.id} id={m.id} />)}
+        {!loading && data?.movies?.map(m => <Movie key={m.id} id={m.id} bg={m.medium_cover_image} />)}
 
       </Container>
     );
